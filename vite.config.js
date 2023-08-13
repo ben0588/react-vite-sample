@@ -10,6 +10,21 @@ export default defineConfig({
       - development 用於 dev
       - 設定是產品路徑，所套用的 /react-vite-sample/ 等同 github專案的名稱
   */
-    base: process.env === 'production' ? '/react-vite-sample/' : '/',
+    base: process.env.NODE_ENV === 'production' ? '/react-vite-sample/' : '/',
     plugins: [react()],
 });
+
+// 如何建立多個環境 ？
+/*
+  export default defineConfig(({ mode }) => {
+    console.log(mode);
+    // 開發中、產品路徑
+    const base = mode === 'staging' ? '/staging-gh-pages-sample/' : '/';
+    return {
+      base,
+      plugins: [react()],
+    };
+  });
+
+  然後使用 npm run build -- --mode staging，就可以傳入 'staging' 的環境變數 
+*/
