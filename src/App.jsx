@@ -4,13 +4,10 @@ import useProductContext from './hooks/useProductContext';
 import axios from 'axios';
 
 function App() {
-    // const [count, setCount] = useState(0);
-    const value = useProductContext();
-
     useEffect(() => {
         (async () => {
             try {
-                const result = await axios.get('./src/data/data.json');
+                const result = await axios.get('/data.json');
                 console.log(result.data);
             } catch (error) {
                 console.log(error);
@@ -18,11 +15,7 @@ function App() {
         })();
     }, []);
 
-    return (
-        <ProductProvider>
-            <div>測試中2</div>
-        </ProductProvider>
-    );
+    return <div>測試中2</div>;
 }
 
 export default App;
