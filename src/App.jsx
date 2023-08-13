@@ -20,7 +20,7 @@ function App() {
 
     return (
         <ProductProvider>
-            <div>測試中</div>
+            <div>測試中2</div>
         </ProductProvider>
     );
 }

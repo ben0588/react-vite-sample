@@ -12,6 +12,14 @@ export default defineConfig({
   */
     base: process.env.NODE_ENV === 'production' ? '/react-vite-sample/' : '/',
     plugins: [react()],
+    build: {
+        rollupOptions: {
+            input: {
+                main: 'index.html',
+                data: 'src/data/data.json',
+            },
+        },
+    },
 });
 
 // 如何建立多個環境 ？
