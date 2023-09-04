@@ -132,7 +132,7 @@ const Home = () => {
                 title='回首頂端'
                 onClick={() => handleGoToTop()}
             >
-                <AiOutlineArrowUp style={{ width: '2rem', height: '2rem', fill: 'white' }} />
+                <AiOutlineArrowUp style={{ width: '1.5rem', height: '1.5rem', fill: 'white', fontSize: '1.5rem' }} />
             </button>
         </div>
     );
