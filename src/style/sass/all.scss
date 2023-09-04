@@ -1,5 +1,9 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
+html {
+    font-size: 1rem; /* 設置一個合適的字體大小 */
+}
+
 .top-btn {
     position: fixed;
     bottom: 20px;
