@@ -1,0 +1,19 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
